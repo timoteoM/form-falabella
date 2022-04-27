@@ -1,0 +1,159 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="form_1.css">
+    </head>
+
+    <body>
+        <h1>Formulario de Registro</h1>
+        <div id="formulario">
+            <h4>COMPLETA TUS DATOS PESONALES</h3>
+            <h6>*Campos Obligatorios</h6>
+            <hr>
+            <form name="form1" method="POST" action="#">
+                <table>
+                    <tr>
+                        <td>
+                            <!-- usamos un label para especificarle con unn atributo for, la id del input que queremos "enfocar" -->
+                            <label for="nombre">Nombre:</label>
+                        </td>
+        
+                        <td>
+                            <input type="text" name="nombre" id="nombre" size= 25" maxlength="30" placeholder="Ej:Timoteo" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="apellido">Apellido:</label>
+                        </td>
+
+                        <td>
+                            <input type="text" name="apellido" id="apellido" size="25" maxlength="30" placeholder="Ej:Meneses" required>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <label for="email">Correo:</label>
+                        </td>
+
+                        <td>
+                            <input type="email" name="email" id="email" size="25" maxlength="30" placeholder="Ej:timoteo.me@inacapmail.com" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span>Contraseña:</span>
+                        </td>
+
+                        <td>
+                            <input type="password" name="pws" id="pws" size="25" maxlength="30" placeholder="Ej: $&Q#" required>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <span>País Residencia:</span>
+                        </td>
+
+                        <td>
+                            <select name="pais" id="pais">
+                                <!-- reciben un valor -->
+                                <option value="0">Ingrese una opción</option>
+                                <option value="1">Chile</option>
+                                <option value="2">Péru</option>
+                                <option value="3">Argentina</option>
+                            </select>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <span>Género</span>
+                        </td>
+
+                        <td>
+                            <!-- también reciben un valor -->
+                            <input type="radio" name="radio" id="radio" value="1" checked> Marculino<br>
+                            <input type="radio" name="radio" id="radio" value="2">Femenino<br>
+                            <input type="radio" name="radio" id="radio" value="3">Prefiero no decirlo
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <span>Fecha de Nacimiento:</span>
+                        </td>
+
+                        <td>
+                            <input type="date" name="fecha" id="fecha" required><br>
+                            <!-- <input type="datetime-local" name="datetime" id="datetime"><br> -->
+                            <!-- <input type="week" name="week" id="week"><br> -->
+                            <!-- <input type="time" name="time" id="time"> -->
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="telefono">Celular (+569):</label>
+                        </td>
+
+                        <td>
+                            <input type="tel" name="telefono" id="telefono" size="8" maxlength="8" placeholder="Ej: 12345678">
+                        </td>
+                    </tr>
+                    
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="terminos" id="terminos" value="1">
+                        </td>
+
+                        <td>
+                            <span>Acepto recibir novedades y oportunidades de las marcas Falabella y empresas relacionadas a Holding Falabella</span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="terminos" id="terminos" value="1">
+                        </td>
+
+                        <td>
+                            <span>Al registrarte estas aceptando los <strong style=" color: green;">Términos y condiciones</strong></span>
+                        </td>
+                    </tr>
+                </table>
+                
+                <button type="submit" class="boton" id="xd">Enviar datos</button>
+                <button type="reset" class="boton">Limpiar formulario</button>
+    
+            </form>
+
+           
+            
+            
+            
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+    </body>
+
+
+
+</html>
