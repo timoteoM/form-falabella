@@ -32,6 +32,7 @@ table{
 }
 
 .boton{
+    transition: all 0.4s ease;
     background-color: rgb(34, 201, 34);
     color: white;
     box-shadow: 4px 4px 10px black;
@@ -47,3 +48,7 @@ table{
 }
 
 
+.boton:hover{
+    box-shadow: 5px 5px 5px rgba(2, 3, 2, 0.5);
+
+}

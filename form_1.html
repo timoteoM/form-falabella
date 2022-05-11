@@ -1,6 +1,10 @@
 <html>
     <head>
         <link rel="stylesheet" href="form_1.css">
+        <meta name="viewport" content="width=device-width" initial-scale="1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.js"></script>
+        <script src="form_1.js"></script>
     </head>
 
     <body>
@@ -9,7 +13,7 @@
             <h4>COMPLETA TUS DATOS PESONALES</h3>
             <h6>*Campos Obligatorios</h6>
             <hr>
-            <form name="form1" method="POST" action="#">
+            <form id="form1" name="form1" method="POST" action="#">
                 <table>
                     <tr>
                         <td>
@@ -18,7 +22,7 @@
                         </td>
         
                         <td>
-                            <input type="text" name="nombre" id="nombre" size= 25" maxlength="30" placeholder="Ej:Timoteo" required>
+                            <input type="text" name="nombre" id="nombre" size= 25" maxlength="30" placeholder="Ej:Timoteo">
                         </td>
                     </tr>
 
@@ -28,7 +32,7 @@
                         </td>
 
                         <td>
-                            <input type="text" name="apellido" id="apellido" size="25" maxlength="30" placeholder="Ej:Meneses" required>
+                            <input type="text" name="apellido" id="apellido" size="25" maxlength="30" placeholder="Ej:Meneses">
                         </td>
                     </tr>
 
@@ -39,7 +43,7 @@
                         </td>
 
                         <td>
-                            <input type="email" name="email" id="email" size="25" maxlength="30" placeholder="Ej:timoteo.me@inacapmail.com" required>
+                            <input type="email" name="correo" id="correo" size="25" maxlength="30" placeholder="Ej:timoteo.me@inacapmail.com">
                         </td>
                     </tr>
 
@@ -49,7 +53,7 @@
                         </td>
 
                         <td>
-                            <input type="password" name="pws" id="pws" size="25" maxlength="30" placeholder="Ej: $&Q#" required>
+                            <input type="password" name="pws" id="pws" size="25" maxlength="30" placeholder="Ej: $&Q#" >
                         </td>
                     </tr>
 
@@ -91,7 +95,7 @@
                         </td>
 
                         <td>
-                            <input type="date" name="fecha" id="fecha" required><br>
+                            <input type="date" name="fecha" id="fecha"><br>
                             <!-- <input type="datetime-local" name="datetime" id="datetime"><br> -->
                             <!-- <input type="week" name="week" id="week"><br> -->
                             <!-- <input type="time" name="time" id="time"> -->
